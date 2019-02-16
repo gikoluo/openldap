@@ -1,5 +1,8 @@
 version: 1
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.824
 dn: dc=gkewang,dc=cn
 objectClass: organization
 objectClass: dcObject
@@ -7,6 +10,9 @@ objectClass: top
 dc: gkewang
 o: KaiDianBao
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.835
 dn: cn=admin,dc=gkewang,dc=cn
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
@@ -14,21 +20,33 @@ cn: admin
 userPassword: {SSHA}+tfo2Z54LFimPa24g1v0IAH092maufMc
 description: LDAP administrator
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.843
 dn: ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: inner
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.851
 dn: ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: groups
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.858
 dn: ou=people,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: people
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.868
 dn: cn=django-agent,dc=gkewang,dc=cn
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
@@ -37,27 +55,42 @@ userPassword: {SHA512}eDzbznn6sJxt6gi/KQGcwp+6/RBWbM3AtaWJEcTCaVz30wRPcV0dDA
  TVT2Vf029LE9Hx3CT+nU3Lwl0ZoniYsg==
 description: LDAP administrator
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.874
 dn: ou=organization,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: organization
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.883
 dn: ou=jpos,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: jpos
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.891
 dn: ou=jenkins,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: jenkins
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.903
 dn: cn=users,ou=jpos,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfUniqueNames
 cn: users
 uniqueMember: cn=18621509910,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.910
 dn: cn=sa,ou=jenkins,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
@@ -65,6 +98,9 @@ cn: sa
 member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.919
 dn: cn=admin,ou=jenkins,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
@@ -72,6 +108,9 @@ cn: admin
 member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.927
 dn: cn=tester,ou=jenkins,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
@@ -79,6 +118,9 @@ cn: tester
 member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.936
 dn: cn=developer,ou=jenkins,ou=inner,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
@@ -86,6 +128,9 @@ cn: developer
 member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.943
 dn: cn=staff,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
@@ -94,12 +139,18 @@ member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 member: cn=mjc@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.952
 dn: cn=active,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
 cn: active
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.958
 dn: cn=group2,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: posixGroup
@@ -107,23 +158,35 @@ cn: group2
 gidNumber: 1
 memberUid: 5001
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.968
 dn: ou=django,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: django
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.976
 dn: cn=disabled,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
 cn: disabled
 member: cn=anonymous,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:07.983
 dn: cn=superuser,ou=django,ou=groups,dc=gkewang,dc=cn
 objectClass: top
 objectClass: groupOfNames
 cn: superuser
 member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.004
 dn: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
 objectClass: simpleSecurityObject
 objectClass: top
@@ -139,6 +202,9 @@ displayName:: 6buE56yR5rOi
 mail: apm@gkewang.cn
 mobile: 18877187712
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.020
 dn: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
 objectClass: simpleSecurityObject
 objectClass: top
@@ -154,6 +220,9 @@ displayName:: 572X5pil5pmW
 mail: wo@gkewang.cn
 mobile: 18621509910
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.029
 dn: cn=mjc@gkewang.cn,ou=people,dc=gkewang,dc=cn
 objectClass: simpleSecurityObject
 objectClass: inetOrgPerson
@@ -167,6 +236,9 @@ displayName:: 6ams5bu65oiQMg==
 mail: mjc@gkewang.cn
 mobile: 18621509999
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.043
 dn: cn=wxl@gkewang.cn,ou=people,dc=gkewang,dc=cn
 objectClass: person
 objectClass: organizationalPerson
@@ -175,11 +247,17 @@ cn: wxl@gkewang.cn
 sn: wxl@gkewang.cn
 userPassword: {SSHA}XDhIt23UfYuH9sIaK8snbSD9ZKEx7GtO
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.057
 dn: ou=tee,ou=organization,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
 ou: tee
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.070
 dn: cn=admin,ou=organization,dc=gkewang,dc=cn
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
@@ -187,6 +265,9 @@ cn: admin
 userPassword: {SSHA}+tfo2Z54LFimPa24g1v0IAH092maufMc
 description: LDAP administrator
 
+#!RESULT OK
+#!CONNECTION ldap://127.0.0.1:8389
+#!DATE 2019-02-16T22:20:08.083
 dn: ou=settlement,ou=organization,dc=gkewang,dc=cn
 objectClass: top
 objectClass: organizationalUnit
