@@ -1,35 +1,35 @@
 version: 1
 
-dn: dc=gkewang,dc=cn
+dn: dc=greenlandfinancial,dc=com
 objectClass: organization
 objectClass: dcObject
 objectClass: top
 dc: gkewang
 o: KaiDianBao
 
-dn: cn=admin,dc=gkewang,dc=cn
+dn: cn=admin,dc=greenlandfinancial,dc=com
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
 cn: admin
 userPassword: {SSHA}+tfo2Z54LFimPa24g1v0IAH092maufMc
 description: LDAP administrator
 
-dn: ou=inner,dc=gkewang,dc=cn
+dn: ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: inner
 
-dn: ou=groups,dc=gkewang,dc=cn
+dn: ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: groups
 
-dn: ou=people,dc=gkewang,dc=cn
+dn: ou=people,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: people
 
-dn: cn=django-agent,dc=gkewang,dc=cn
+dn: cn=django-agent,dc=greenlandfinancial,dc=com
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
 cn: django-agent
@@ -37,157 +37,144 @@ userPassword: {SHA512}eDzbznn6sJxt6gi/KQGcwp+6/RBWbM3AtaWJEcTCaVz30wRPcV0dDA
  TVT2Vf029LE9Hx3CT+nU3Lwl0ZoniYsg==
 description: LDAP administrator
 
-dn: ou=organization,dc=gkewang,dc=cn
+dn: ou=organization,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: organization
 
-dn: ou=jpos,ou=inner,dc=gkewang,dc=cn
+dn: ou=jpos,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: jpos
 
-dn: ou=jenkins,ou=inner,dc=gkewang,dc=cn
+dn: ou=jenkins,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: jenkins
 
-dn: cn=users,ou=jpos,ou=inner,dc=gkewang,dc=cn
+dn: cn=users,ou=jpos,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfUniqueNames
 cn: users
-uniqueMember: cn=18621509910,ou=people,dc=gkewang,dc=cn
+uniqueMember: cn=18621509910,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=sa,ou=jenkins,ou=inner,dc=gkewang,dc=cn
+dn: cn=sa,ou=jenkins,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: sa
-member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=admin,ou=jenkins,ou=inner,dc=gkewang,dc=cn
+dn: cn=admin,ou=jenkins,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: admin
-member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=tester,ou=jenkins,ou=inner,dc=gkewang,dc=cn
+dn: cn=tester,ou=jenkins,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: tester
-member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=developer,ou=jenkins,ou=inner,dc=gkewang,dc=cn
+dn: cn=developer,ou=jenkins,ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: developer
-member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=staff,ou=groups,dc=gkewang,dc=cn
+dn: cn=staff,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: staff
-member: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
-member: cn=mjc@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
+member: cn=wangxiaoqiang@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=active,ou=groups,dc=gkewang,dc=cn
+dn: cn=active,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: active
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=group2,ou=groups,dc=gkewang,dc=cn
+dn: cn=group2,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: posixGroup
 cn: group2
 gidNumber: 1
 memberUid: 5001
 
-dn: ou=django,ou=groups,dc=gkewang,dc=cn
+dn: ou=django,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: django
 
-dn: cn=disabled,ou=groups,dc=gkewang,dc=cn
+dn: cn=disabled,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: disabled
-member: cn=anonymous,ou=people,dc=gkewang,dc=cn
+member: cn=anonymous,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=superuser,ou=django,ou=groups,dc=gkewang,dc=cn
+dn: cn=superuser,ou=django,ou=groups,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: groupOfNames
 cn: superuser
-member: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+member: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 
-dn: cn=apm@gkewang.cn,ou=people,dc=gkewang,dc=cn
+dn: cn=jiyuan@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 objectClass: simpleSecurityObject
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
-cn: apm@gkewang.cn
-sn: Huang Xiaobo
+cn: jiyuan@greenlandfinancial.com
+sn: Ji Yuan
 userPassword: {MD5}fVVZumIxNWObBV9N6WGHzQ==
 carLicense: 221234
 description:: 5LiA5Liq5aW95Lq6
 displayName:: 6buE56yR5rOi
-mail: apm@gkewang.cn
+mail: jiyuan@greenlandfinancial.com
 mobile: 18877187712
 
-dn: cn=wo@gkewang.cn,ou=people,dc=gkewang,dc=cn
+dn: cn=luochunhui@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 objectClass: simpleSecurityObject
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
-cn: wo@gkewang.cn
+cn: luochunhui@greenlandfinancial.com
 sn: Chunhui
 userPassword: {MD5}XZkE1s4aZVh9QtpYJjVT1g==
 carLicense: 202wWudn3WL3d8T2s4t8s55AWHcw0yT0B6eZgaRtcna9EA2ht
 description: Hello
 displayName:: 572X5pil5pmW
-mail: wo@gkewang.cn
+mail: luochunhui@greenlandfinancial.com
 mobile: 18621509910
 
-dn: cn=mjc@gkewang.cn,ou=people,dc=gkewang,dc=cn
-objectClass: simpleSecurityObject
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
-objectClass: top
-cn: mjc@gkewang.cn
-sn: MaJiancheng
-userPassword: {MD5}fVVZumIxNWObBV9N6WGHzQ==
-displayName:: 6ams5bu65oiQMg==
-mail: mjc@gkewang.cn
-mobile: 18621509999
-
-dn: cn=wxl@gkewang.cn,ou=people,dc=gkewang,dc=cn
+dn: cn=wangxiaoqiang@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
-cn: wxl@gkewang.cn
-sn: wxl@gkewang.cn
+cn: wangxiaoqiang@greenlandfinancial.com
+sn: wangxiaoqiang@greenlandfinancial.com
 userPassword: {SSHA}XDhIt23UfYuH9sIaK8snbSD9ZKEx7GtO
 
-dn: ou=tee,ou=organization,dc=gkewang,dc=cn
+dn: ou=tee,ou=organization,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: tee
 
-dn: cn=admin,ou=organization,dc=gkewang,dc=cn
+dn: cn=admin,ou=organization,dc=greenlandfinancial,dc=com
 objectClass: organizationalRole
 objectClass: simpleSecurityObject
 cn: admin
 userPassword: {SSHA}+tfo2Z54LFimPa24g1v0IAH092maufMc
 description: LDAP administrator
 
-dn: ou=settlement,ou=organization,dc=gkewang,dc=cn
+dn: ou=settlement,ou=organization,dc=greenlandfinancial,dc=com
 objectClass: top
 objectClass: organizationalUnit
 ou: settlement
