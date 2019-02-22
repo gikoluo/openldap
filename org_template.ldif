@@ -1,18 +1,7 @@
 version: 1
 
-dn: dc=greenlandfinancial,dc=com
-objectClass: organization
-objectClass: dcObject
-objectClass: top
-dc: gkewang
-o: KaiDianBao
 
-dn: cn=admin,dc=greenlandfinancial,dc=com
-objectClass: organizationalRole
-objectClass: simpleSecurityObject
-cn: admin
-userPassword: {SSHA}+tfo2Z54LFimPa24g1v0IAH092maufMc
-description: LDAP administrator
+
 
 dn: ou=inner,dc=greenlandfinancial,dc=com
 objectClass: top
@@ -153,6 +142,7 @@ description: Hello
 displayName:: 572X5pil5pmW
 mail: luochunhui@greenlandfinancial.com
 mobile: 18621509910
+
 
 dn: cn=wangxiaoqiang@greenlandfinancial.com,ou=people,dc=greenlandfinancial,dc=com
 objectClass: person

@@ -5,7 +5,7 @@
 docker-compose up
 
 
-## Deploy Service
+## Deploy by K8S Service
 
 kubectl apply -f openldap-etc-pvc.yaml
 kubectl apply -f openldap-lib-pvc.yaml
@@ -29,9 +29,14 @@ kubectl port-forward openldap-XXXXXX-XXXX  8389:389
 helm install --name openldap -f helm.yaml stable/openldap
 
 
+## Deploy by Yum 
+yum install openldap-server
+follow the instruction: https://linuxtechlab.com/openldap-complete-guide-install-configure
+
+
 ## Usages
 1. Test: 
-`ldapsearch -x -W -D 'cn=admin,dc=luochunhui,dc=com' -b "" -s base`
+`ldapsearch -x -W -D 'cn=Manager,dc=greenlandfinancial,dc=com' -b "" -s base`
 ```
 Enter LDAP Password:
 # extended LDIF
@@ -53,7 +58,7 @@ result: 0 Success
 ```
 
 2. Import Template data
-ldapadd -x -W -D 'cn=admin,dc=gkewang,dc=cn' -f org_template.ldif
+ldapadd -x -W -D 'cn=admin,dc=greenlandfinancial,dc=cn' -f org_template.ldif
 
 
 3. Use ApacheDirectoryStudio to setup the groups and users.
@@ -67,6 +72,9 @@ Bind password: **password set in docker-compose**
 
 4. Load org_template.ldif to ldap by ApacheDirectoryStudio
 
+5. User Management
+
+6. Group Management
 
 
 ## Extends
@@ -79,10 +87,6 @@ openssl req -newkey rsa:2048 -keyout ldap.gkewang.com.key -out ldap.gkewang.com.
 
 
 
-
-
-
-
 openssl req \
   -new \
   -newkey rsa:4096 \
@@ -92,3 +96,6 @@ openssl req \
   -subj "/C=US/ST=CA/L=SF/O=Docker-demo/CN=app.example.org" \
   -keyout app.example.org.key \
   -out app.example.org.cert
+
+
+
